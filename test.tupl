@@ -1,0 +1,18 @@
+# this is a comment
+set global hello world \n
+log
+
+jmp my_label
+
+set global this should never log \n
+log
+
+
+my_label: # comments are ignored
+    set global 1
+    set a      1
+    add a
+    log
+    set global that should give two
+    log
+    halt
