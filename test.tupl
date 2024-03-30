@@ -1,18 +1,18 @@
 # this is a comment
-set global hello world \n
+set global hello world
 log
 
 jmp my_label
 
-set global this should never log \n
+set global this should never log
 log
 
 
 my_label: # comments are ignored
-    set global 1
+    read
     set a      1
     add a
     log
-    set global that should give two
+    set global good job :thumbsup:
     log
     halt

@@ -17,7 +17,7 @@ jmp     label      jumps to a label
 
 if      val        only preformes the next val lines if global is truthy
 
-add     reg        adds a registry to global (concats text)
+add     reg        adds a registry to global (parses to int)
 //sub   reg        subtracts a regisrtry from global
 mult    reg        multiplies global by a registry
 //div   reg        divides global by a registry
