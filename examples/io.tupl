@@ -1,0 +1,9 @@
+log Enter your age: 
+read age
+
+set global 10
+add age
+
+log You will be: 
+prt global
+log years old in 10 years\n

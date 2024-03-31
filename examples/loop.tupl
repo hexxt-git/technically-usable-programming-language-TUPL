@@ -1,0 +1,16 @@
+set i 0
+log Enter loop size: 
+read max
+log Enter sleep time: 
+read sleeptime
+loop:
+    prt i
+    log \n
+    sleer sleeptime
+
+    inc i             # increment the counter by one each loop
+    mov i global
+    lt  max           # not less than equavilant to greater than or equal to
+    not global
+    if  1
+        jmp loop      # jump back to the top of the loop if the counter is less than max

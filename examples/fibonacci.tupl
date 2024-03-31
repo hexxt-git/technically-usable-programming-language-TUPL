@@ -1,0 +1,19 @@
+set a 0
+set b 1
+set max 1000000000000000
+
+fibonacci:
+    sleep 200
+
+    mov b c
+    mov b global
+    add a
+    mov global b
+    mov c a
+
+    prt b
+    log , 
+    
+    gt max
+    if 1
+        jmp fibonacci
